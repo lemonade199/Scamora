@@ -124,6 +124,15 @@
           <span class="material-symbols-outlined text-[18px]">lock</span>
         </button>
 
+        <!-- User Profile Pill / Avatar Button -->
+        <a href="#/profil" id="nav-btn-profile" class="nav-link-item flex items-center gap-2 p-1 sm:px-2.5 sm:py-1.5 rounded-xl border border-surface-container hover:bg-surface-container text-on-surface text-xs transition-all group" title="Profil Pengguna">
+          <div class="relative w-7 h-7 rounded-lg bg-gradient-to-tr from-secondary to-secondary-container flex items-center justify-center text-white font-bold text-xs shadow-sm">
+            <span id="nav-profile-initials">AP</span>
+            <span class="absolute -bottom-0.5 -right-0.5 w-2 h-2 rounded-full bg-emerald-500 border border-white"></span>
+          </div>
+          <span id="nav-profile-name" class="hidden sm:inline-block font-semibold text-xs text-on-surface group-hover:text-secondary transition-colors">Arya P.</span>
+        </a>
+
         <!-- Mobile Menu Button -->
         <button id="btn-mobile-menu" class="lg:hidden p-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container" aria-label="Buka Menu Navigasi">
           <span class="material-symbols-outlined text-[22px]">menu</span>
@@ -154,6 +163,12 @@
       </a>
       <a href="#/komunitas" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-semibold text-on-surface-variant hover:bg-surface-container flex items-center gap-2">
         <span class="material-symbols-outlined text-[18px]">forum</span> Komunitas (Tahap Lanjutan P2)
+      </a>
+      <a href="#/profil" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-semibold text-on-surface hover:bg-surface-container flex items-center justify-between border-t border-surface-container pt-3">
+        <span class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px] text-secondary">account_circle</span> Profil Saya
+        </span>
+        <span class="text-[10px] font-mono bg-surface-container px-2 py-0.5 rounded text-secondary font-semibold">Aktif</span>
       </a>
     </div>
   </header>
@@ -194,6 +209,7 @@
             <li><a href="#/panduan" class="hover:text-secondary transition-colors">Panduan Tindakan & Checklist (P0/P1)</a></li>
             <li><a href="#/kuis" class="hover:text-secondary transition-colors">Guardian Challenge Kuis (P1)</a></li>
             <li><a href="#/pengetahuan" class="hover:text-secondary transition-colors">Pusat Pengetahuan Modus (P1)</a></li>
+            <li><a href="#/profil" class="hover:text-secondary transition-colors">Profil Pengguna & Keamanan</a></li>
           </ul>
         </div>
 
@@ -237,6 +253,7 @@
   <script src="assets/js/ui/quiz.js"></script>
   <script src="assets/js/ui/knowledge.js"></script>
   <script src="assets/js/ui/community.js"></script>
+  <script src="assets/js/ui/profile.js"></script>
   <script src="assets/js/app.js"></script>
 
   <script>

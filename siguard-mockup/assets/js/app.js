@@ -63,6 +63,9 @@ window.Scamora = window.Scamora;
       case '#/komunitas':
         renderCommunityPage(appRoot);
         break;
+      case '#/profil':
+        renderProfilePage(appRoot);
+        break;
       default:
         renderHomePage(appRoot);
         break;
@@ -1518,6 +1521,13 @@ window.Scamora = window.Scamora;
         S.showToast('Apresiasi Anda tercatat!', 'success');
       });
     });
+  }
+
+  // 9. USER PROFILE PAGE (#/profil - MOCKUP)
+  function renderProfilePage(container) {
+    if (S.renderProfilePage) {
+      S.renderProfilePage(container);
+    }
   }
 
   function escapeHtml(str) {
